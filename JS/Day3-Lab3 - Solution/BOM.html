@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BOM Practice</title>
+  <script src="Bom.js" defer></script>
+</head>
+<body>
+  <h1>BOM Questions</h1>
+
+  <!-- 1 -->
+  <div>
+    <h3>1. Open a new window and close after 3 seconds</h3>
+    <button onclick="openAndCloseWindow()">Run</button>
+  </div>
+
+  <!-- 2 -->
+  <div>
+    <h3>2. Display User Agent</h3>
+    <button onclick="showUserAgent()">Run</button>
+  </div>
+
+  <!-- 3 -->
+  <div>
+    <h3>3. Detect Online/Offline</h3>
+    <button onclick="checkOnlineStatus()">Run</button>
+  </div>
+
+  <!-- 4 -->
+  <div>
+    <h3>4. Reload page after 5 seconds</h3>
+    <button onclick="reloadPage()">Run</button>
+  </div>
+
+  <!-- 5 -->
+  <div>
+    <h3>5. Show Location Info</h3>
+    <button onclick="logLocationInfo()">Run</button>
+  </div>
+
+  <!-- 6 -->
+  <div>
+    <h3>6. Use history back/forward</h3>
+    <button onclick="historyNav()">Run</button>
+  </div>
+
+  <!-- 7 -->
+  <div>
+    <h3>7. Show Screen Size</h3>
+    <div>placeholder</div>
+    <button onclick="showScreenSize()">Run</button>
+  </div>
+
+  <!-- 8 -->
+  <div>
+    <h3>8. Change Link with setTimeout (Cancelable)</h3>
+    <a href="https://google.com">Google</a>
+    <button onclick="changeLink(this)">Change After 2s</button>
+    <button onclick="cancelChange()">Cancel</button>
+
+  </div>
+
+  <!-- 9 -->
+  <div>
+    <h3>9. Update Page Title with setInterval (Stop Button)</h3>
+    <button onclick="startTitleClock()">Start</button>
+    <button onclick="stopTitleClock()">Stop</button>
+  </div>
+
+  <!-- 10 -->
+  <div>
+    <h3>10. Confirm Dialog</h3>
+    <button onclick="askConfirm()">Run</button>
+  </div>
+</body>
+</html>

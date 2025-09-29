@@ -1,0 +1,150 @@
+  <!DOCTYPE html>
+
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      <title>DOM</title>
+      <style>
+        .target-div {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-top: 10px;
+        }
+        .class-a {
+          background-color: yellow;
+          color: black;
+        }
+        .class-b {
+          background-color: blue;
+          color: white;
+        }
+        .hidden {
+          display: none;
+        }
+        .odd {
+          background-color: #f0f0f0; /* light gray */
+          color: black;
+        }
+
+        .even {
+          background-color: #d0ebff; /* light blue */
+          color: black;
+        }
+        span{
+          background-color: aquamarine;
+        }
+
+      </style>
+    </head>
+    <body>
+      <h1>Day4 DOM</h1>
+      <div id="my-div">
+        <p id="my-p">Hello ISI</p>
+      </div>
+      <form action="test.html">
+        <input type="text" id="my-input" placeholder="Type something..." />
+        <input
+          type="email"
+          name="user-email"
+          id="my-email"
+          placeholder="Type your email..."
+        />
+        <select name="user-country" id="my-select">
+          <option value="us">United States</option>
+          <option value="EG">Egypt</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="form-output" class="target-div"></div>
+
+      <div class="target-div" id="div-2">
+        <h3>create element using js</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+          reiciendis!
+        </p>
+
+      </div>
+        <!-- Image -->
+
+      <br>
+      <img id="slider" src="https://picsum.photos/id/1015/600/300" width="600" height="300">
+
+      <!-- Controls -->
+      <div>
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+      </div>
+
+      <div id="wrapper">
+        <p id="first">First</p>
+        <p id="second">Second</p>
+      </div>
+      <!-- <form action="">
+        <div>
+
+        </div>
+      </form> -->
+      <!-- <script>
+        // Getting elements > getElementsByTagName, getElementsByName, getElementById, querySelector
+        // Working with select/options > options, innerText, hasAttribute, selected
+
+        //   document.getElementById("my-p").innerHTML += "<span> Hello </span>";
+        //   console.log(document.getElementById("my-div").nodeName === "DIV");
+        //   console.log(document.getElementsByTagName("div")[0]);
+        //   document.getElementsByName("user-name")[0].placeholder = "say your name";
+        //   document.getElementsByName("user-name")[0].value = "kareem";
+        //   console.log(document.forms[0].elements[2].options);
+        //   document.forms[0].elements[2].options[2].selected = true;
+        //   console.log( document.querySelector(".target-div").innerHTML += "<a href='#'>google</a>"  )
+        //   console.log( document.querySelectorAll("div")[0]  )
+
+        // Modifying elements > innerHTML, placeholder, setAttribute, innerText
+        // Class manipulation > classList.add, classList.remove, classList.toggle, classList.replace
+
+        // document.querySelector("[type = text]").setAttribute("name", "user-name")
+        //   //   console.log(  document.querySelector("[type = text]").hasAttribute("name"))
+        //   document.getElementById("div-2").className = " aly";
+        //   document.getElementById("div-2").classList.add("new-div-class");
+        //   document.getElementById("div-2").classList.remove("aly");
+        //   document.getElementById("div-2").classList.toggle("hidden");
+        //   document.getElementById("div-2").classList.toggle("hidden");
+        //   console.log(document.getElementById("div-2"));
+
+        // Form events > onsubmit
+
+        //   document.forms[0].onsubmit = funA;
+        //     function funA(){
+        //         alert("hello")
+        //     }
+
+        // Creating elements > createElement
+        // DOM insertion > appendChild, insertBefore, insertAdjacentElement
+
+        var myDiv = document.createElement("div");
+        myDiv.innerText = "Hello World";
+        var targeDiv = document.getElementById("div-2");
+          targeDiv.appendChild(myDiv);
+
+      //   beforeBegin, afterBegin, beforEend, afterEnd
+      //   targeDiv.insertAdjacentElement("afterend", myDiv);
+          myDiv.style.backgroundColor = "red"
+          myDiv.style.height = "100px"
+          myDiv.style.borderTopLeftRadius = "30px" //border-top-left-radius
+      //   Style manipulation > style.borderTopLeftRadius
+
+
+        // DOM removal > removeChild
+      //   myDiv.remove()
+          targeDiv.removeChild(myDiv)
+
+      </script> -->
+      <script src="Solution-Day4-Ibrahim Ahmed Ibrahim.js"></script>
+    </body>
+  </html>

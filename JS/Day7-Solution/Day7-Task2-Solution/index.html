@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Linked List Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Linked List Operations</h1>
+
+    <section id="controls">
+      <input id="valueInput" type="text" placeholder="Enter value (press Enter or click)" />
+      <button id="btnInsertBegin">Insert at Beginning</button>
+      <button id="btnInsertEnd">Insert at End</button>
+      <button id="btnRemoveBegin">Remove from Beginning</button>
+      <button id="btnRemoveEnd">Remove from End</button>
+      <button id="btnReverse">Reverse List</button>
+    </section>
+
+    <section id="debugArea">
+      <div id="debug">List (head → tail): empty | head: — | tail: —</div>
+      <div id="opLog" aria-live="polite" style="opacity:.85;margin-top:6px;font-size:13px;"></div>
+    </section>
+
+    <section id="listContainer">
+      <div id="listDisplay" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

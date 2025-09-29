@@ -1,0 +1,11 @@
+/* 1.a — Lucida Calligraphy font for p, div, span */
+p,
+div,
+span {
+    font-family: "Lucida Calligraphy";
+}
+
+/* 1.b — h1 child from div centered */
+div>h1 {
+    text-align: center;
+}

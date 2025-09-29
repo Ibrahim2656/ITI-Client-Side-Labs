@@ -1,0 +1,167 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eee;
+  padding: 20px;
+  color: #333;
+}
+
+.cv-container {
+  max-width: 700px; 
+  margin: auto;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 100vh; 
+}
+
+/* Header */
+.cv-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f9a825;
+  color: white;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+}
+
+.cv-header h1 {
+  font-size: 22px;
+}
+.profession {
+  font-weight: bold;
+}
+.description {
+  font-size: 14px;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+/* Content Layout */
+.cv-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cv-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cv-left h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f9a825;
+}
+
+/* Contact */
+.contact p {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Languages */
+.languages p {
+  margin: 8px 0 4px;
+}
+.bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  position: relative;
+}
+.bar::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(var(--percent, 0) * 1%);
+  background: var(--color, #f9a825);
+}
+
+/* Skills Circles */
+.skills-circles {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  --size: 70px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(var(--color, #f9a825) calc(var(--percent, 0) * 1%), #ddd 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+
+.circle span {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* Online Info */
+.online-icons {
+  display: flex;
+  gap: 10px;
+}
+.online-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Right Column */
+.cv-right section {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.section-title {
+  width: fit-content;
+  background: #f9a825;
+  color: white;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.cv-right p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}

@@ -1,0 +1,188 @@
+/* ===== General Page Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    /* Space for fixed navbar */
+    background-color: #f8f9fc;
+    color: #333;
+}
+
+h1,
+h2 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Navbar Styles ===== */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    display: inline-block;
+    /* Inline-block: horizontal but allows padding/margin */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #4CAF50;
+    /* Green on hover */
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    /* Green for active link */
+}
+
+/* Fixed Navbar */
+.navbar.fixed {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Sticky Navbar */
+.navbar.sticky {
+    background-color: #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    background: #eaf3ff;
+    border: 1px solid #ccc;
+}
+
+/* ===== Overlay Image ===== */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.overlay-box {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.overlay-box h3 {
+    margin: 0 0 5px;
+}
+
+.overlay-box p {
+    margin: 0;
+    color: #87ceeb;
+}
+
+/* ===== Photo Gallery ===== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    width: 150px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.gallery-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item h4 {
+    margin: 8px 0 4px;
+    font-size: 16px;
+}
+
+.gallery-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== Vertical Menu ===== */
+.menu {
+    border: 2px solid #c0392b;
+    width: 220px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    background-color: #222;
+}
+
+.menu li:hover {
+    background-color: #c0392b;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}

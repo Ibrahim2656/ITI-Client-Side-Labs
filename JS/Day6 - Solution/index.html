@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Users</title>
+</head>
+<body>
+    <section class="Users">
+        <table id="date-table">
+            <thead>
+                <tr id="table-head"></tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </section>
+    <section class="linked-list">
+        <div>
+            <input type="text" id="valueInput" placeholder="Enter value">
+            <button onclick="insertValue()">Insert</button>
+            <button onclick="popValue()">Pop</button>
+            <button onclick="insertAtBeginning()">Insert at Beginning</button>
+            <button onclick="removeFromBeginning()">Remove from Beginning</button>
+        </div>
+
+        <ul id="listDisplay" class="list"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

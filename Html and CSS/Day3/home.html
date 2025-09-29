@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fixed Navbar -->
+    <header>
+        <nav class="navbar fixed">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <h1>Welcome to My Lab Website</h1>
+    </section>
+
+    <!-- Navbar Theory -->
+    <section>
+        <h2>Navbar Theory</h2>
+        <p><strong>Why use display: inline-block?</strong><br>
+            <code>inline-block</code> lets elements sit next to each other (like inline) but still allows setting width,
+            height, and margins (like block).
+        </p>
+
+        <p><strong>Difference between inline, block, and inline-block:</strong><br>
+            - <strong>inline</strong>: Flows with text, cannot set width/height, margins only work horizontally.<br>
+            - <strong>block</strong>: Starts on a new line, takes full width by default, can set width/height.<br>
+            - <strong>inline-block</strong>: Sits inline but can have width/height/margins like a block.</p>
+    </section>
+
+    <!-- Sticky Navbar Example -->
+    <section>
+        <h2>Sticky Navbar Example</h2>
+
+
+        <h3>Fixed vs Sticky:</h3>
+        <p><strong>Fixed:</strong> Stays at the same position on the screen no matter where you scroll.<br>
+            <strong>Sticky:</strong> Acts like relative until the scroll reaches its top position, then it "sticks"
+            until its parent element is out of view.
+        </p>
+    </section>
+
+    <!-- Overlay Text on Image -->
+    <section>
+        <h2>Overlay Text on Image</h2>
+        <div class="image-container">
+            <img src="Media\water-6579313_1280.jpg" alt="Nature">
+            <div class="overlay-box">
+                <h3>Nature</h3>
+                <p>What a beautiful View</p>
+            </div>
+        </div>
+        <p>This uses <code>position: absolute</code> for the text inside a <code>position: relative</code> container,
+            and <code>z-index</code> to make it appear above the image.</p>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section>
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Media\sunset-7133867_1280.jpg" alt="Sunset">
+                <h4>Sun Set</h4>
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Media\sailboat-9597523_1280.jpg" alt="sailboat">
+                <h4>Sailboat</h4>
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Media\path-6514885_1280.jpg" alt="Road">
+                <h4>Road</h4>
+                <p>Lorem ipsum dolor.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="Media\cliffs-1866832_1280.jpg" alt="Mountain">
+                <h4>Mountain</h4>
+                <p>Lorem ipsum dolor.</p>
+            </div>
+        </div>
+        <p>This gallery uses <code>display: flex</code> for a responsive, evenly spaced layout.</p>
+    </section>
+
+    <!-- Vertical Menu -->
+    <section>
+        <h2>Vertical Menu</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://stackoverflow.com/questions" target="_blank">Stack overflow</a></li>
+                <li><a href="https://github.com/" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <p>This menu uses <code>ul</code> and <code>li</code> with a black background and red hover effect, matching the
+            provided design.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Lab Website</p>
+        <script>
+            document.write("<strong> Thank YOU </strong>");
+        </script>
+    </footer>
+
+</body>
+
+</html>

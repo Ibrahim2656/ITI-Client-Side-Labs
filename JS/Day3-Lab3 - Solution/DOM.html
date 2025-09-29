@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Traversal Practice</title>
+  <script src="dom.js" defer></script>
+</head>
+<body>
+  <h1>DOM Traversal Questions</h1>
+
+  <!-- 11 -->
+  <div>
+    <h3>11. Select first UL and log childNodes vs children</h3>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+    </ul>
+    <button onclick="q11()">Run</button>
+  </div>
+
+  <!-- 12 -->
+  <div>
+    <h3>12. Log all direct children of body</h3>
+    <button onclick="q12()">Run</button>
+  </div>
+
+  <!-- 13 -->
+  <div>
+    <h3>13. Log only element nodes from childNodes</h3>
+    <p>Paragraph</p>
+    <span>Span</span>
+    <button onclick="q13(this)">Run</button>
+  </div>
+
+  <!-- 14 -->
+  <div>
+    <h3>14. firstChild vs firstElementChild</h3>
+    <div>
+      <p>First P</p>
+      <p>Second P</p>
+    </div>
+    <button onclick="q14(this)">Run</button>
+  </div>
+
+  <!-- 15 -->
+  <div>
+    <h3>15. Get all li inside ul using children</h3>
+    <ul>
+      <li>A</li>
+      <li>B</li>
+    </ul>
+    <button onclick="q15(this)">Run</button>
+  </div>
+
+  <!-- 17 -->
+  <div>
+    <h3>17. Log all siblings of an element</h3>
+    <div>
+      <p>First</p>
+      <p>Second</p>
+      <p>Third</p>
+    </div>
+    <button onclick="q17(this)">Run (siblings of 2nd p)</button>
+  </div>
+
+  <!-- 18 -->
+  <div>
+    <h3>18. Traverse with nextSibling vs nextElementSibling</h3>
+    <ul>
+      <li>X</li>
+      <li>Y</li>
+      <li>Z</li>
+    </ul>
+    <button onclick="q18(this)">Run</button>
+  </div>
+
+  <!-- 19 -->
+  <div>
+    <h3>19. Count element children</h3>
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      Text
+    </div>
+    <button onclick="q19(this)">Run</button>
+  </div>
+
+  <!-- 20 -->
+  <div>
+    <h3>20. Log names & values of inputs in first form</h3>
+    <form name="testForm">
+      <input type="text" name="user" value="Alice">
+      <input type="password" name="pass" value="1234">
+    </form>
+    <button onclick="q20()">Run</button>
+  </div>
+
+  <!-- 21 -->
+  <div>
+    <h3>21. Log all forms' names</h3>
+    <form name="f1"></form>
+    <form name="f2"></form>
+    <button onclick="q21()">Run</button>
+  </div>
+
+  <!-- 22 -->
+  <div>
+    <h3>22. Log all images' src</h3>
+    <img src="https://media.istockphoto.com/id/893378666/photo/picking-up-some-speed-there.jpg?s=612x612&w=is&k=20&c=dmRpfMxwI1ax10IaaL7myjsRweCzWbKPl5YbYmsnMt0=" width="100">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_zM7bI7_iefVJixm_DEwZYffe2oIijD28Q&s" width="150">
+    <button onclick="q22()">Run</button>
+  </div>
+
+  <!-- 23 -->
+  <div>
+    <h3>23. Disable all inputs in form</h3>
+    <form name="disableForm">
+      <input type="text" name="a" value="Hello">
+      <input type="text" name="b" value="World">
+    </form>
+    <button onclick="q23()">Run</button>
+  </div>
+
+  <!-- 24 -->
+  <div>
+    <h3>24. Convert images to array and filter width > 100px</h3>
+    <img src="https://www.shutterstock.com/image-photo/social-media-digital-online-concept-260nw-2474208529.jpg" width="200">
+    <img src="https://cdn.pixabay.com/photo/2022/08/22/11/04/skate-7403432_1280.jpg" width="80">
+    <button onclick="q24()">Run</button>
+  </div>
+</body>
+</html>
